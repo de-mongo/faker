@@ -6,15 +6,16 @@ const courseSchema = new mongoose.Schema({
     dept_id : {
         type : ObjectId,
         required : true,
+        unique : true
     }, 
     faculty_id : {
         type : ObjectId,
         required : true,
+        unique : true
     },
     course_name : {
         type : String,
         required : true,
-        unique : true
     },
 });
 

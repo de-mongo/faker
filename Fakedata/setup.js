@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const Department = require('./models/department');
 const Student = require('./models/student');
 const Course = require('./models/course');
-const { db } = require('./models/student');
+var constants = require('./constants');
+// const { db } = require('./models/student');
 
 var test = mongoose.connect('mongodb://root:SL1WDaoFsu@65.0.199.223:31911/', {
     useNewUrlParser: true, useUnifiedTopology: true
@@ -14,14 +15,25 @@ var test = mongoose.connect('mongodb://root:SL1WDaoFsu@65.0.199.223:31911/', {
     console.log(err); 
 })
 
-const dept_id_scis = mongoose.Types.ObjectId();
-const dept_id_ls = mongoose.Types.ObjectId();
-const dept_id_sop = mongoose.Types.ObjectId();
-const dept_id_soc = mongoose.Types.ObjectId();
-const dept_id_soac = mongoose.Types.ObjectId();
-const dept_id_som = mongoose.Types.ObjectId();
-const dept_id_soman = mongoose.Types.ObjectId();
-const dept_id_lit = mongoose.Types.ObjectId();
+const dept_id_scis = constants.dept_id_scis;
+const dept_id_ls = constants.dept_id_ls;
+const dept_id_sop = constants.dept_id_sop;
+const dept_id_soc = constants.dept_id_soc;
+const dept_id_soac = constants.dept_id_soac;
+const dept_id_som = constants.dept_id_som;
+const dept_id_soman = constants.dept_id_soman;
+const dept_id_lit = constants.dept_id_lit;
+
+// module.exports = Object.freeze({
+//     dept_id_scis,
+//     dept_id_ls,
+//     dept_id_sop, 
+//     dept_id_soc,
+//     dept_id_soac,
+//     dept_id_som,
+//     dept_id_soman,
+//     dept_id_lit
+// });
 
 
 const fakerStudents = [
@@ -97,7 +109,7 @@ const fakerStudents = [
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
         degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
-        courses : [mongoose.Types.ObjectId()],
+        // courses : [mongoose.Types.ObjectId()],
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -577,7 +589,35 @@ const fakerCourse = [
 //         // mongoose.connection.close();
 //     });
 
+
 (async function(){
+    await Student.deleteMany({})
+    .then(function() {
+        console.log("Student Data deleted");
+        // mongoose.connection.close();
+    }).catch(function(error){
+        console.log(error)      // Failure
+        // mongoose.connection.close();
+    });
+
+    await Course.deleteMany({})
+    .then(function() {
+        console.log("Course Data deleted");
+        // mongoose.connection.close();
+    }).catch(function(error){
+        console.log(error)      // Failure
+        // mongoose.connection.close();
+    });
+    
+    await Department.deleteMany({})
+    .then(function() {
+        console.log("Department Data deleted");
+        // mongoose.connection.close();
+    }).catch(function(error){
+        console.log(error)      // Failure
+        // mongoose.connection.close();
+    });
+
     await Student.insertMany(fakerStudents)
     .then(function() {
         console.log("Student Data inserted");

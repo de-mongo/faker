@@ -5,12 +5,12 @@ var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 const departmentSchema = new mongoose.Schema({
     _id : {
         type : ObjectId,
-        required : true
+        required : true,
+        unique : true
     }, 
     dept_name : {
         type : String,
         required : true,
-        unique : true
     }
 });
 

@@ -34,8 +34,8 @@ const fakerStudents = [
         email : faker.internet.email(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
-        courses : [mongoose.Types.ObjectId()],
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
+        // courses : [mongoose.Types.ObjectId()],
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -47,7 +47,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -59,7 +59,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -71,7 +71,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     }, 
@@ -83,7 +83,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech', 'Ph.D']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -96,7 +96,7 @@ const fakerStudents = [
         email : faker.internet.email(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         courses : [mongoose.Types.ObjectId()],
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
@@ -109,7 +109,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -121,7 +121,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     },
@@ -133,7 +133,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     }, 
@@ -145,7 +145,7 @@ const fakerStudents = [
         last_name : faker.name.lastName(),
         street_address : faker.address.streetAddress() + faker.address.city() + faker.address.country(),
         date_of_birth : (faker.date.between('2000-01-01', '2004-01-01')),
-        degree : faker.helpers.arrayElement(['IMTech', 'MCA', 'MTech', 'Ph.D']),
+        degree : faker.helpers.arrayElement(['Bachelors', 'Masters']),
         cgpa : faker.datatype.float({ min: 5, max: 10, precision: 0.1 }),
         profile_pic : faker.image.image()
     }

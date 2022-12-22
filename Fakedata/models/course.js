@@ -4,7 +4,8 @@ var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 
 const courseSchema = new mongoose.Schema({
     dept_id : {
-        type : ObjectId,
+        // type : ObjectId,
+        type : Number,
         required : true,
     }, 
     faculty_id : {

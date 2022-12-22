@@ -8,11 +8,12 @@ const studentSchema = new mongoose.Schema({
         required : true,
     }, 
     reg_no : {
-        type : String,
+        type : Number,
         required : true,
     }, 
     dept_id : {
-        type : ObjectId,
+        // type : ObjectId,
+        type: Number,
         required : true
     },
     first_name : {
@@ -35,10 +36,10 @@ const studentSchema = new mongoose.Schema({
         type :  String,
         required : true
     },
-    courses : {
-        type : [ObjectId]
-        // required : true
-    },
+    // courses : {
+    //     type : [ObjectId]
+    //     // required : true
+    // },
     cgpa : {
         type : Number
         // required : true

@@ -39,7 +39,7 @@ const dept_id_lit = constants.dept_id_lit;
 const fakerStudents = [
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100),
+        reg_no : faker.datatype.number(1000),
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -54,7 +54,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100),
+        reg_no : faker.datatype.number(1000),
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]), 
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -67,7 +67,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100),
+        reg_no : faker.datatype.number(1000),
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -80,7 +80,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -93,7 +93,7 @@ const fakerStudents = [
     }, 
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -106,7 +106,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -121,7 +121,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -134,7 +134,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -147,7 +147,7 @@ const fakerStudents = [
     },
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),
@@ -160,7 +160,7 @@ const fakerStudents = [
     }, 
     {
         _id : mongoose.Types.ObjectId(), 
-        reg_no : faker.datatype.number(100), 
+        reg_no : faker.datatype.number(1000), 
         dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop, dept_id_soc, dept_id_soac, dept_id_som, dept_id_som, dept_id_soman, dept_id_lit]),
         // dept_id : faker.helpers.arrayElement([dept_id_scis, dept_id_ls, dept_id_sop]),
         first_name : faker.name.firstName(),

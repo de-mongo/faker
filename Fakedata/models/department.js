@@ -4,8 +4,8 @@ var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 
 const departmentSchema = new mongoose.Schema({
     _id : {
-        // type : ObjectId,
-        type: Number,
+        type : ObjectId,
+        // type: Number,
         required : true,
         unique : true
     }, 

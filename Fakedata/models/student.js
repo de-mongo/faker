@@ -10,10 +10,11 @@ const studentSchema = new mongoose.Schema({
     reg_no : {
         type : Number,
         required : true,
+        unique : true
     }, 
     dept_id : {
-        // type : ObjectId,
-        type: Number,
+        type : ObjectId,
+        // type: Number,
         required : true
     },
     first_name : {

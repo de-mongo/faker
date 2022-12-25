@@ -1,14 +1,27 @@
 const mongoose = require('mongoose');
+// import {Schema, model, Types, PaginateModel} from 'mongoose';
+// const {Schema} = require('mongoose')
+
 
 var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 
 const studentSchema = new mongoose.Schema({
-    _id : {
-        type : ObjectId,
+    email : {
+        type : String,
         required : true,
-    }, 
+    },
+    password : {
+        type : String,
+        required : true,
+        // minlength: 8,
+        select: false,
+    },
+    // _id : {
+    //     type : ObjectId,
+    //     required : true,
+    // }, 
     reg_no : {
-        type : Number,
+        type : String,
         required : true,
         unique : true
     }, 
@@ -16,6 +29,10 @@ const studentSchema = new mongoose.Schema({
         type : ObjectId,
         // type: Number,
         required : true
+    },
+    role: {
+        type: String,
+        enum: ["admin", "faculty", "student"],
     },
     first_name : {
         type : String,
@@ -37,6 +54,9 @@ const studentSchema = new mongoose.Schema({
         type :  String,
         required : true
     },
+    courses: [{
+        type: ObjectId,
+    }],
     // courses : {
     //     type : [ObjectId]
     //     // required : true
@@ -47,8 +67,12 @@ const studentSchema = new mongoose.Schema({
     },
     profile_pic : {
         type :  String,
-        required : true
+        //required : true
+    },
+    sem: {
+        type: Number
     }
+    
 });
 
 const Student = mongoose.model('users', studentSchema);

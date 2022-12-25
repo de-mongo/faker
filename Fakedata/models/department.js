@@ -3,15 +3,19 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 
 const departmentSchema = new mongoose.Schema({
+    // _id : {
+    //     type : ObjectId,
+    //     // type: Number,
+    //     required : true,
+    //     unique : true
+    // },
     _id : {
-        type : ObjectId,
-        // type: Number,
-        required : true,
-        unique : true
-    }, 
-    dept_name : {
+        type : ObjectId, 
+    },
+    name : {
         type : String,
         required : true,
+        unique : true
     }
 });
 

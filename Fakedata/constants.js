@@ -1,5 +1,8 @@
 const { faker } = require('@faker-js/faker');
+// import {Schema, model, Types, PaginateModel} from 'mongoose';
 const mongoose = require('mongoose');
+// const {Schema} = require('mongoose')
+var Schema = mongoose.Schema, ObjectId = Schema.ObjectId;
 
 
 
